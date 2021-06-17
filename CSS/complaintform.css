@@ -1,0 +1,38 @@
+﻿.top  {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.tb1 {
+   
+    color: #333;
+    border: none;
+    outline:1px solid black;
+    background: none;
+    padding:5px;
+    margin:5px;
+    margin-top:7px;
+    height: 26px;
+    width:300px;
+}
+.savebtn {
+    display: block;
+    width: 160px;
+    height: 50px;
+    margin-left:90px;
+    border: none;
+    background: #34495e;
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-top:30px;
+    margin-bottom:30px;
+    
+}
+
+    .savebtn:hover {
+        background-position: right;
+    }

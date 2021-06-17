@@ -1,0 +1,11 @@
+﻿.footer {
+    background: rgb(255,255,255);
+    border-top: 1px solid black;
+    border-bottom: 0px;
+    line-height: 40px;
+}
+
+    .footer p {
+        text-decoration: none;
+        font-size: 12px;
+    }

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="staff.Master.cs" Inherits="Police_Investigation_System_NEW_.Executive" %>
+<META Http-Equiv="Cache-Control" Content="no-cache"/>
+<META Http-Equiv="Pragma" Content="no-cache"/>
+<META Http-Equiv="Expires" Content="0"/>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+    
+    <meta charset="utf-8">
+    <title></title>
+    <link href="CSS/dropdown.css" rel="stylesheet" />
+    <link href="CSS/executivemaster.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    <form id="form1" runat="server">
+     
+<div class="header">
+    <h2 class="logo">Police Investigation System</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="staffhome.aspx">HOME</a>
+        <a href="complaint.aspx">COMPLAINT</a>
+      <a href="searchcomplaint.aspx">INVESTIGATE</a>
+      <a href="dailyentry.aspx">ADD ENTRY</a>
+         <div class="dropdown">
+  <button class="dropbtn">QUICK SEARCH</button>
+  <div class="dropdown-content">
+    <a href="Staffsearch.aspx">SEARCH POLICE</a>
+    <a href="searchentry.aspx">SEARCH ENTRIES</a>
+  </div>
+</div>
+      <a href="login1.aspx">LOGOUT</a>
+                
+            </div>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         
+       <div class="footer">
+            <p>
+                Desclaimer: User will be liable to be prosecuted for malicious complaint or content in accordance with the law in force.
+                This website belongs to National Crime Records Bureau,Ministry of Home Affairs,Government of india.                    
+                
+           
+                
+           
+                </p>
+        </div>
+   </form>
+   
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="executive.Master.cs" Inherits="Police_Investigation_System_NEW_.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+ 
+    <meta charset="utf-8">
+    <title></title>
+    <link href="CSS/menu.css" rel="stylesheet" />
+    
+    <link href="CSS/footer.css" rel="stylesheet" />
+    <link href="CSS/dropdown.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    <form id="form1" runat="server">
+     
+<div class="header">
+    
+    <h2 class="logo">Police Investigation System</h2>
+    <input type="checkbox" id="chk">
+
+    <ul class="menu">
+      
+            
+      <a href="executivehome.aspx">HOME</a>
+        <a href="complaintforMaster.aspx">COMPLAINT</a>
+         <a href="quickSearchforMaster.aspx">INVESTIGATE</a>
+        <a href="AddEntryformaster.aspx">ADD ENTRY</a>
+         <div class="dropdown">
+  <button class="dropbtn">QUICK SEARCH</button>
+  <div class="dropdown-content">
+    <a href="InvestigateforMaster.aspx">SEARCH POLICE</a>
+    <a href="Entrysearchformaster.aspx">SEARCH ENTRIES</a>
+  </div>
+</div>
+      <div class="dropdown">
+  <button class="dropbtn">UPDATE & DELETE</button>
+  <div class="dropdown-content">
+    <a href="updatedelete.aspx">MODIFY RECORDS</a>
+    <a href="updeleteentry.aspx">MODIFY ENTRIES</a>
+  </div>
+</div>
+      <a href="Login1.aspx">LOGOUT</a>
+               </ul>
+            </div>
+             
+         <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+   
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+   
+        
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         
+       <div class="footer">
+            <p>
+                Desclaimer: User will be liable to be prosecuted for malicious complaint or content in accordance with the law in force.
+                This website belongs to National Crime Records Bureau,Ministry of Home Affairs,Government of india.                    
+                
+           
+                
+           
+                </p>
+        </div>
+   </form>
+   
+</body>
+</html>
